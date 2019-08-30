@@ -4,7 +4,7 @@
 #
 Name     : mvn-scalatest_2.12
 Version  : 1
-Release  : 1
+Release  : 2
 URL      : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source0  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source1  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
