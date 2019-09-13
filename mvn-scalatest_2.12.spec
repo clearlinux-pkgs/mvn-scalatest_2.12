@@ -4,12 +4,14 @@
 #
 Name     : mvn-scalatest_2.12
 Version  : 1
-Release  : 3
+Release  : 4
 URL      : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source0  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
-Source1  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
-Source2  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
-Source3  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+Source1  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.jar
+Source2  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.pom
+Source3  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
+Source4  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+Source5  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -35,14 +37,20 @@ data components for the mvn-scalatest_2.12 package.
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
 cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 
-mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
 
 
 %files
@@ -50,5 +58,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest
 
 %files data
 %defattr(-,root,root,-)
+/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.jar
+/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.pom
 /usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 /usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
