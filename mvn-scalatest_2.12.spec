@@ -4,7 +4,7 @@
 #
 Name     : mvn-scalatest_2.12
 Version  : 1
-Release  : 4
+Release  : 5
 URL      : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source0  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source1  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.jar
@@ -12,6 +12,8 @@ Source2  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0
 Source3  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 Source4  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
 Source5  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+Source6  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.jar
+Source7  : https://repo.maven.apache.org/maven2/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -52,6 +54,12 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3
 cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.pom
+
 
 %files
 %defattr(-,root,root,-)
@@ -62,3 +70,5 @@ cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/scalatest/scalatest
 /usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.0/scalatest_2.12-3.0.0.pom
 /usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.jar
 /usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.3/scalatest_2.12-3.0.3.pom
+/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.jar
+/usr/share/java/.m2/repository/org/scalatest/scalatest_2.12/3.0.7/scalatest_2.12-3.0.7.pom
